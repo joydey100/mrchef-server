@@ -43,8 +43,8 @@ app.post("/checkout", async (req, res) => {
       },
     ],
     mode: "payment",
-    success_url: "http://localhost:5173/myorder",
-    cancel_url: "http://localhost:5173/cancel",
+    success_url: "https://mrchef1.netlify.app/myorder",
+    cancel_url: "https://mrchef1.netlify.app/cancel",
   });
 
   // Calculate the total amount
