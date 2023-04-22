@@ -1,6 +1,7 @@
 // required dependencies
 const express = require("express");
 const cors = require("cors");
+const PORT = process.env.PORT || 5000;
 
 // important variables
 let orderInfo = {};
@@ -68,6 +69,6 @@ app.get("/myorder", (req, res) => {
 });
 
 // run the server
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log(`server is running`);
 });
